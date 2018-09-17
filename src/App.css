@@ -1,7 +1,4 @@
 
-.App {
-
-}
 
 .background{
   position: fixed;
@@ -103,12 +100,15 @@
   border-bottom-right-radius: 12px;
   box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.55);
   z-index: 1;
+  transition: width .7s;
 }
 
 .slidein{
   width:0;
-  transition: width .1s;
+  /* transition: width .1s; */
+  animation: slide 1s;
 }
+
 
 input{
   margin-top: 1em;
@@ -150,4 +150,24 @@ input{
 
 .hide{
   display: none;
+}
+
+.canvas{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.tkt{
+border: solid;
+margin-top: 10em;
+margin-left: 1em;
+}
+
+.todo{
+  position: relative;
+  padding:1em;
+  width: 200px;
 }

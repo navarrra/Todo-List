@@ -10,9 +10,8 @@ class App extends Component {
       <div className="App">
         <div className="background">
           <Layout />
-          
               <Title />
-              <Createtkt />
+            <Createtkt />
         </div>
       </div>
     );
